@@ -224,7 +224,7 @@ ${userRule}`;
     content: string,
     isFirst: boolean = false,
     isLast: boolean = false,
-    model: string = 'deepseek-chat',
+    model: string = 'deepseek-flash',
     usage: any = null,
   ): string {
     const chunk: OpenAIChatStreamChunk = {
