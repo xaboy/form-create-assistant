@@ -3,7 +3,7 @@ import { AgentConfig, BaseAgent } from './base.js';
 export class OtherAgent extends BaseAgent {
   private parsedUrl: { baseUrl: string; endpoint: string };
 
-  constructor(apiKey: string, model: string = 'deepseek-chat') {
+  constructor(apiKey: string, model: string = 'deepseek-flash') {
     // 从环境变量获取配置，如果没有则使用默认值
     const fullUrl = process.env.AGENT_API || 'https://api.deepseek.com/v1/chat/completions';
     const parsedUrl = OtherAgent.parseUrl(fullUrl);

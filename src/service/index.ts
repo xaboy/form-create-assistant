@@ -100,7 +100,7 @@ app.post('/api/chat/completions', async (req: Request, res: Response) => {
     }
 
     if (!params.model) {
-      params.model = process.env.DEFAULT_MODEL || 'deepseek-chat';
+      params.model = process.env.DEFAULT_MODEL || 'deepseek-flash';
     }
 
     if (params.form && params.form.rule) {

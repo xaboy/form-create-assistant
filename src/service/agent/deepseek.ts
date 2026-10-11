@@ -1,7 +1,7 @@
 import { AgentConfig, BaseAgent } from './base.js';
 
 export class DeepSeekAgent extends BaseAgent {
-  constructor(apiKey: string, model: string = 'deepseek-chat') {
+  constructor(apiKey: string, model: string = 'deepseek-flash') {
     const config: AgentConfig = {
       baseUrl: 'https://api.deepseek.com',
       apiKey,

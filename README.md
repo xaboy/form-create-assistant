@@ -70,8 +70,8 @@ PORT=3001
 # 默认 Agent 类型（默认: deepseek）
 DEFAULT_AGENT=deepseek
 
-# 默认模型（默认: deepseek-chat）
-DEFAULT_MODEL=deepseek-chat
+# 默认模型（默认: deepseek-flash）
+DEFAULT_MODEL=deepseek-flash
 
 # 默认 API 密钥（可选，当请求中未提供 Authorization header 时使用）
 DEFAULT_TOKEN=your-api-key-here
@@ -126,7 +126,7 @@ Authorization: Bearer <your-api-key>
 
 ```json
 {
-  "model": "deepseek-chat",
+  "model": "deepseek-flash",
   "agent": "deepseek",
   "ui": "element-plus",
   "messages": [
@@ -453,7 +453,7 @@ curl -X POST http://localhost:3001/api/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <your-api-key>" \
   -d '{
-    "model": "deepseek-chat",
+    "model": "deepseek-flash",
     "agent": "deepseek",
     "ui": "element-plus",
     "messages": [
@@ -475,7 +475,7 @@ curl -X POST http://localhost:3001/api/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <your-api-key>" \
   -d '{
-    "model": "deepseek-chat",
+    "model": "deepseek-flash",
     "agent": "deepseek",
     "ui": "element-plus",
     "messages": [
@@ -509,7 +509,7 @@ const response = await fetch('http://localhost:3001/api/chat/completions', {
     'Authorization': 'Bearer <your-api-key>',
   },
   body: JSON.stringify({
-    model: 'deepseek-chat',
+    model: 'deepseek-flash',
     agent: 'deepseek',
     ui: 'element-plus',
     messages: [
